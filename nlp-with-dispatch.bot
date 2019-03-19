@@ -1,0 +1,60 @@
+{
+    "name": "nlp-with-dispatch",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "id": "1",
+            "name": "development",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages"
+        },
+        {
+            "type": "luis",
+            "name": "Home Automation",
+            "appId": "35bdbc30-2c61-4bce-bc9b-84865548fef3",
+            "authoringKey": "5ac14b0ef88f45f5a4f31410367e93e3",
+            "subscriptionKey": "5ac14b0ef88f45f5a4f31410367e93e3",
+            "version": "0.1",
+            "region": "westus",
+            "id": "7"
+        },
+        {
+            "type": "luis",
+            "name": "Weather",
+            "appId": "0cb21e40-d0af-4b02-b295-684773ab62c4",
+            "authoringKey": "5ac14b0ef88f45f5a4f31410367e93e3",
+            "subscriptionKey": "5ac14b0ef88f45f5a4f31410367e93e3",
+            "version": "0.1",
+            "region": "westus",
+            "id": "50"
+        },
+        {
+            "type": "qna",
+            "name": "csaluisqnadispatchqna",
+            "id": "201",
+            "kbId": "ad1e2e52-5f0d-4986-b35f-404786ad8c06",
+            "subscriptionKey": "b73b427aaec24dba95abfd523a326022",
+            "endpointKey": "90cb462f-3800-474f-8497-f088ca8d0dea",
+            "hostname": "https://csaluisqnadispatchqna.azurewebsites.net/qnamaker"
+        },
+        {
+            "type": "dispatch",
+            "serviceIds": [
+                "50",
+                "201",
+                "7"
+            ],
+            "name": "nlp-with-dispatchDispatch",
+            "appId": "60b6a5bf-92a3-4e79-a55f-9946dee14ba3",
+            "authoringKey": "5ac14b0ef88f45f5a4f31410367e93e3",
+            "subscriptionKey": "5ac14b0ef88f45f5a4f31410367e93e3",
+            "version": "Dispatch",
+            "region": "westus",
+            "id": "161"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0"
+}

@@ -1,0 +1,101 @@
+{
+    "name": "csaluisqnadispatchbot",
+    "description": "",
+    "services": [
+        {
+            "type": "abs",
+            "id": "3",
+            "name": "csaluisqnadispatchbot",
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+            "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
+            "resourceGroup": "csaluisqnadispatchlab",
+            "serviceName": "csaluisqnadispatchbot",
+            "appId": "e50649dd-163b-4d60-af4d-c77c057d9ad7"
+        },
+        {
+            "type": "endpoint",
+            "id": "1",
+            "name": "development",
+            "appId": "e50649dd-163b-4d60-af4d-c77c057d9ad7",
+            "appPassword": "t/paaiWXuISaqiYTtkjUhA==!Gt2K/Khd4VPy+Gvw3GbwKKV4DX63N3Lajgto7lGF080=",
+            "endpoint": "http://localhost:3978/api/messages"
+        },
+        {
+            "type": "appInsights",
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+            "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
+            "resourceGroup": "csaluisqnadispatchlab",
+            "name": "csaluisqnadispatchqna-ai",
+            "serviceName": "csaluisqnadispatchqna-ai",
+            "instrumentationKey": "ulc9JbU95v1a8X8b2nrS6g==!4Urt9KRKFLrFparBWfW1poJAQ1AHzGvjyL4tMVnl7woBIRCJ68eRJUhVtEP553W1",
+            "applicationId": "28da4b4d-564d-42b8-83ed-ca650fd3cef3",
+            "apiKeys": {},
+            "id": "4"
+        },
+        {
+            "type": "blob",
+            "id": "5",
+            "name": "csaluisqnabsrd",
+            "serviceName": "csaluisqnabsrd",
+            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+            "subscriptionId": "6c59fd5f-9a1a-455e-a2d3-16fff41ae6e1",
+            "resourceGroup": "csaluisqnadispatchlab",
+            "connectionString": "J2mQYwYt4gDmsP9RQ1Xp9g==!NLlhl7XLhJ0evS27D+h6XDPOcwQ6IUIJJPoa2EfkQcRO3qs/7XscIhn2Gzibc/pg1c55RnJLjCvWil7IV/OAwYxs5U2oPLHa3KVHKlO2Fd2PaR1/tGkYeJauOrZjETtnpGCDTF86I9P/BKLtt9Wd8o18WboghFa1qbVaNxxl8umjd2o03Y7k6Fq/Q79r1mFSrqlaM/Rog1bQz8XWRb5aHSoIiCAjVhHhhC6xJ9Ralp62Z/KvVTlGaC5rr1JrKLO7",
+            "container": "botstatestore"
+        },
+        {
+            "type": "endpoint",
+            "name": "production",
+            "appId": "e50649dd-163b-4d60-af4d-c77c057d9ad7",
+            "appPassword": "HG7vXvKocekrq+9IzngzPA==!eT+cya6E6Tk7G/znHCStbRCyQBPMaMYlruK96UZ7pYE=",
+            "endpoint": "https://csaluisqnadispaqaqx.azurewebsites.net/api/messages",
+            "id": "203"
+        },
+        {
+            "type": "luis",
+            "name": "Home Automation",
+            "appId": "35bdbc30-2c61-4bce-bc9b-84865548fef3",
+            "authoringKey": "KPXMdWyE89QHz8k/8bcYjA==!inwdY6Jn2TlNu+zYg7Qz9eyDDlhawLV//gisqHgswUcVObBKqfkN5DLyHcOgjTzt",
+            "subscriptionKey": "t2mfynVlV8yGNYXqraaVow==!g36eIhs72A1uSxUt9QJSN2vAk+ZkobcJYzpQv+doht6kWFDLq5Ood1wUrB+Oq7au",
+            "version": "0.1",
+            "region": "westus",
+            "id": "7"
+        },
+        {
+            "type": "luis",
+            "name": "Weather",
+            "appId": "0cb21e40-d0af-4b02-b295-684773ab62c4",
+            "authoringKey": "YABz0CX9uyI1tXdBcw+aTw==!M++SzomKCJHd8DSE8GAmQkthpIRBl/skThpHIBJvpy0jNVjfixUfroOv1GylWhMn",
+            "subscriptionKey": "K1HEJjqUmgFRkEXbe+s51w==!N6MvhtV9JsBHwR6hOiCKD4xWCN0OchR/7sgOf85TX4hMny5YU/Xw6qkR441L2v6d",
+            "version": "0.1",
+            "region": "westus",
+            "id": "50"
+        },
+        {
+            "type": "qna",
+            "name": "csaluisqnadispatchqna",
+            "id": "201",
+            "kbId": "ad1e2e52-5f0d-4986-b35f-404786ad8c06",
+            "subscriptionKey": "OJ7RI6NdfHC3DSFYD7h37Q==!voGCXYlE6qdmFPjwdIT/GBfYwVf4sv7J13YYTw3Q/8UzSzLHlR2b1l4l454KGmvZ",
+            "endpointKey": "0v5gor4iVgD+RMzUUbkClg==!kx+3JZMxRAeqt3iqpeacEFQ4CmAjkm31DuNHvTWH3A7ll8siyPiDn8HeI1ib7zO7",
+            "hostname": "https://csaluisqnadispatchqna.azurewebsites.net/qnamaker"
+        },
+        {
+            "type": "dispatch",
+            "serviceIds": [
+                "50",
+                "201",
+                "7"
+            ],
+            "name": "nlp-with-dispatchDispatch",
+            "appId": "60b6a5bf-92a3-4e79-a55f-9946dee14ba3",
+            "authoringKey": "cgQQjGjNlDvAMRyx5e00Kg==!mH0b5KrmDIqK8daGHt3zi0Tm0OrQlCkOf+p70fuqq97lbBntegO6/X/noDxnd6wn",
+            "subscriptionKey": "OJm7/4Kkfb3xT6pRemGqRg==!ARF/R9X6kaAtDhp4CZhh1Xyh64pMA+9awMEgM+VYeLao4MEnNVdZefJ9DFx2fbF5",
+            "version": "Dispatch",
+            "region": "westus",
+            "id": "161"
+        }
+    ],
+    "padlock": "r+jbIN/VkOw79AJmNHeIzg==!y2sOquNZhX3szMWIbT1+FEczxweueqCHw8qkwhRw5tBE1DKEpB4+PaSUOjQjEAug",
+    "version": "2.0"
+}
